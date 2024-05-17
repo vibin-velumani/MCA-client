@@ -62,7 +62,8 @@ export const Login = () => {
       });
   };
   return (
-    <Container>
+    <div className="login-body">
+    <Container >
       {loading ? (
         <Loading />
       ) : (
@@ -137,5 +138,6 @@ export const Login = () => {
       )}
       <ToastContainer />
     </Container>
+    </div>
   );
 };

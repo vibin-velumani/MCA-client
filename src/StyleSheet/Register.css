@@ -1,6 +1,9 @@
+/* Apply a background image */
 .auth {
     margin-top: 10em;
-    background-color: #4cb69f;
+    
+    background: url('/src/img/bg3.jpg') no-repeat center center fixed, #4cb69f;
+    background-size: cover;
     padding: 1em;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -16,12 +19,26 @@
     display: flex;
     flex-direction: column;
     gap: 1em;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background to make the form stand out */
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .auth span {
     font-size: 1.2em;
+    color: #333; /* Change text color to make it more readable on the white background */
 }
 
 .password-strength {
     color: red;
+}
+.login-body {
+    background: url('/src/img/login-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw; 
+     /* Set the height to 100% of the viewport height */
 }

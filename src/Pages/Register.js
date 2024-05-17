@@ -116,12 +116,12 @@ export const Register = () => {
     enteredOtp.length !== 6;
 
   return (
-    <>
+    <div className="login-body">
       <ToastContainer />
       {loading ? (
         <></>
       ) : (
-        <Container>
+        <Container >
           <Row>
             <Col lg={3} xs={0}></Col>
             <Col lg={6} xs={12}>
@@ -261,6 +261,6 @@ export const Register = () => {
           </Row>
         </Container>
       )}
-    </>
+    </div>
   );
 };
